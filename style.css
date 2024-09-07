@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.header {
+    background-color: aqua;
+    grid-area: h;
+}
+
+
+.menu {
+    background-color: bisque;
+    grid-area: m;
+}
+
+.content {
+    background-color: mediumaquamarine;
+    grid-area: c;
+}
+
+.footer {
+    background-color: coral;
+    grid-area: f;
+}
